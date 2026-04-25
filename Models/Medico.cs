@@ -7,15 +7,13 @@ using SQLite;
 
 namespace MeuPostinhoAPI.Models
 {
-    public class UBS
+    public class Medico
     {
         [PrimaryKey, AutoIncrement]
-        public int IdUBS { get; set; }
+        public int IdMedico { get; set; }
 
         public string Nome { get; set; }
-        public string Endereco { get; set; }
-        public string HorarioFuncionamento { get; set; }
-
-        public List<Medicamento> Medicamentos { get; set; }
+        public string Especialidade { get; set; }
+        public int IdUBS { get; set; }
     }
 }

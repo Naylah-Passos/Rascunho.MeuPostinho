@@ -7,11 +7,15 @@ using SQLite;
 
 namespace MeuPostinhoAPI.Models
 {
-    public class Medicamento
+    public class Relatorio
     {
         [PrimaryKey, AutoIncrement]
-        public int IdMedicamento { get; set; }
-        public string Nome { get; set; }
+        public int IdRelatorio { get; set; }
+
+        public string Tipo { get; set; }
+        public string DataGeracao { get; set; }
         public string Descricao { get; set; }
+
+        public int IdUsuario { get; set; }
     }
 }
