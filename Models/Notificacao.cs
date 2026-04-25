@@ -12,9 +12,13 @@ namespace MeuPostinhoAPI.Models
         [PrimaryKey, AutoIncrement]
         public int IdNotificacao { get; set; }
 
+        [NotNull]
         public string Mensagem { get; set; }
+
+        [NotNull]
         public string DataEnvio { get; set; }
 
+        [NotNull]
         public int IdUsuario { get; set; }
     }
 }

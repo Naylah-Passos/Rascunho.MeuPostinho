@@ -12,7 +12,10 @@ namespace MeuPostinhoAPI.Models
         [PrimaryKey, AutoIncrement]
         public int IdMedicamento { get; set; }
 
+        [NotNull, MaxLength(100)]
         public string Nome { get; set; }
+
+        [NotNull]
         public string Descricao { get; set; }
     }
 }

@@ -12,10 +12,16 @@ namespace MeuPostinhoAPI.Models
         [PrimaryKey, AutoIncrement]
         public int IdRelatorio { get; set; }
 
+        [NotNull]
         public string Tipo { get; set; }
-        public string DataGeracao { get; set; }
+
+        [NotNull]
+        public DateTime DataGeracao { get; set; }
+
+        [NotNull]
         public string Descricao { get; set; }
 
+        [NotNull]
         public int IdUsuario { get; set; }
     }
 }

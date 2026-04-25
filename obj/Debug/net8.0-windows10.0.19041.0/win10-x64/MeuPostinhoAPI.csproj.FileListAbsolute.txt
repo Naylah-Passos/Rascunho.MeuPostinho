@@ -275,3 +275,8 @@ C:\PROJETOS VISUAL STUDIO 2022\MeuPostinhoAPI\obj\Debug\net8.0-windows10.0.19041
 C:\PROJETOS VISUAL STUDIO 2022\MeuPostinhoAPI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\MultipleQualifiersPerDimensionFound.txt
 C:\PROJETOS VISUAL STUDIO 2022\MeuPostinhoAPI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\MeuPostinhoAPI.genpublishdeps.cache
 C:\PROJETOS VISUAL STUDIO 2022\MeuPostinhoAPI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\ProjectArchitectures.txt
+C:\PROJETOS VISUAL STUDIO 2022\MeuPostinhoAPI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\SQLite-net.dll
+C:\PROJETOS VISUAL STUDIO 2022\MeuPostinhoAPI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\SQLitePCLRaw.batteries_v2.dll
+C:\PROJETOS VISUAL STUDIO 2022\MeuPostinhoAPI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\SQLitePCLRaw.core.dll
+C:\PROJETOS VISUAL STUDIO 2022\MeuPostinhoAPI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\SQLitePCLRaw.provider.e_sqlite3.dll
+C:\PROJETOS VISUAL STUDIO 2022\MeuPostinhoAPI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\e_sqlite3.dll

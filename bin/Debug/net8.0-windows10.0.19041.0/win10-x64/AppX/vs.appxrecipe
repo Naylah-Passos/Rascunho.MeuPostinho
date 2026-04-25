@@ -30,25 +30,25 @@
     <AppXManifest Include="C:\PROJETOS VISUAL STUDIO 2022\MeuPostinhoAPI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2026-04-12T01:46:28.633</Modified>
+      <Modified>2026-04-25T21:42:34.909</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\PROJETOS VISUAL STUDIO 2022\MeuPostinhoAPI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2026-04-12T01:46:28.155</Modified>
+      <Modified>2026-04-25T21:42:34.230</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\PROJETOS VISUAL STUDIO 2022\MeuPostinhoAPI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\MeuPostinhoAPI.runtimeconfig.json">
       <PackagePath>MeuPostinhoAPI.runtimeconfig.json</PackagePath>
-      <Modified>2026-04-12T01:46:27.535</Modified>
+      <Modified>2026-04-25T21:42:33.811</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\PROJETOS VISUAL STUDIO 2022\MeuPostinhoAPI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\MeuPostinhoAPI.dll">
       <PackagePath>MeuPostinhoAPI.dll</PackagePath>
-      <Modified>2026-04-12T01:46:25.391</Modified>
+      <Modified>2026-04-25T21:42:32.107</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\PROJETOS VISUAL STUDIO 2022\MeuPostinhoAPI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>MeuPostinhoAPI.exe</PackagePath>
-      <Modified>2026-04-12T01:46:25.430</Modified>
+      <Modified>2026-04-25T21:42:32.193</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\PROJETOS VISUAL STUDIO 2022\MeuPostinhoAPI\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -506,6 +506,22 @@
       <PackagePath>Microsoft.WindowsAppRuntime.Bootstrap.Net.dll</PackagePath>
       <Modified>2024-08-01T22:37:28.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\nayla\.nuget\packages\sqlite-net-pcl\1.9.172\lib\netstandard2.0\SQLite-net.dll">
+      <PackagePath>SQLite-net.dll</PackagePath>
+      <Modified>2024-03-27T22:22:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\nayla\.nuget\packages\sqlitepclraw.bundle_green\2.1.2\lib\netstandard2.0\SQLitePCLRaw.batteries_v2.dll">
+      <PackagePath>SQLitePCLRaw.batteries_v2.dll</PackagePath>
+      <Modified>2022-09-18T19:28:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\nayla\.nuget\packages\sqlitepclraw.core\2.1.2\lib\netstandard2.0\SQLitePCLRaw.core.dll">
+      <PackagePath>SQLitePCLRaw.core.dll</PackagePath>
+      <Modified>2022-09-18T19:26:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\nayla\.nuget\packages\sqlitepclraw.provider.e_sqlite3\2.1.2\lib\net6.0-windows7.0\SQLitePCLRaw.provider.e_sqlite3.dll">
+      <PackagePath>SQLitePCLRaw.provider.e_sqlite3.dll</PackagePath>
+      <Modified>2022-09-18T19:27:06.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\nayla\.nuget\packages\system.clientmodel\1.0.0\lib\net6.0\System.ClientModel.dll">
       <PackagePath>System.ClientModel.dll</PackagePath>
       <Modified>2024-01-03T17:43:00.000</Modified>
@@ -690,9 +706,13 @@
       <PackagePath>Microsoft.WindowsAppRuntime.Bootstrap.dll</PackagePath>
       <Modified>2024-06-25T19:48:44.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\nayla\.nuget\packages\sqlitepclraw.lib.e_sqlite3\2.1.2\runtimes\win-x64\native\e_sqlite3.dll">
+      <PackagePath>e_sqlite3.dll</PackagePath>
+      <Modified>2022-09-18T19:20:44.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\PROJETOS VISUAL STUDIO 2022\MeuPostinhoAPI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\MeuPostinhoAPI.deps.json">
       <PackagePath>MeuPostinhoAPI.deps.json</PackagePath>
-      <Modified>2026-04-12T01:46:28.387</Modified>
+      <Modified>2026-04-25T21:42:34.488</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\nayla\.nuget\packages\humanizer.core\2.14.1\lib\net6.0\Humanizer.dll">
       <PackagePath>Humanizer.dll</PackagePath>
