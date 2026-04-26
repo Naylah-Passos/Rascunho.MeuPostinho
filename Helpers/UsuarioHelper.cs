@@ -15,7 +15,6 @@ namespace MeuPostinhoAPI.Helpers
         public UsuarioHelper(string path)
         {
             _conn = new SQLiteAsyncConnection(path);
-            _conn.CreateTableAsync<Usuario>().Wait();
         }
 
         public Task<int> Insert(Usuario u)

@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\PROJETOS VISUAL STUDIO 2022\MeuPostinhoAPI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2026-04-25T21:42:34.909</Modified>
+      <Modified>2026-04-26T01:21:16.244</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\PROJETOS VISUAL STUDIO 2022\MeuPostinhoAPI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2026-04-25T21:42:34.230</Modified>
+      <Modified>2026-04-25T23:15:15.858</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\PROJETOS VISUAL STUDIO 2022\MeuPostinhoAPI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\MeuPostinhoAPI.runtimeconfig.json">
       <PackagePath>MeuPostinhoAPI.runtimeconfig.json</PackagePath>
@@ -44,11 +44,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\PROJETOS VISUAL STUDIO 2022\MeuPostinhoAPI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\MeuPostinhoAPI.dll">
       <PackagePath>MeuPostinhoAPI.dll</PackagePath>
-      <Modified>2026-04-25T21:42:32.107</Modified>
+      <Modified>2026-04-26T01:21:14.522</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\PROJETOS VISUAL STUDIO 2022\MeuPostinhoAPI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>MeuPostinhoAPI.exe</PackagePath>
-      <Modified>2026-04-25T21:42:32.193</Modified>
+      <Modified>2026-04-26T01:21:14.588</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\PROJETOS VISUAL STUDIO 2022\MeuPostinhoAPI\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -712,7 +712,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\PROJETOS VISUAL STUDIO 2022\MeuPostinhoAPI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\MeuPostinhoAPI.deps.json">
       <PackagePath>MeuPostinhoAPI.deps.json</PackagePath>
-      <Modified>2026-04-25T21:42:34.488</Modified>
+      <Modified>2026-04-25T23:15:16.093</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\nayla\.nuget\packages\humanizer.core\2.14.1\lib\net6.0\Humanizer.dll">
       <PackagePath>Humanizer.dll</PackagePath>

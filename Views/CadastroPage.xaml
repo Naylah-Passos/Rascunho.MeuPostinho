@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MeuPostinhoAPI.Views.CadastroPage"
+             Title="CadastroPage">
+
+    <Grid BackgroundColor="#EEEEEE">
+
+        <!-- Card central -->
+        <Frame BackgroundColor="GhostWhite"
+               WidthRequest="400"
+               Padding="30"
+               CornerRadius="12"
+               HasShadow="True"
+               HorizontalOptions="Center"
+               VerticalOptions="Center">
+
+            <VerticalStackLayout Spacing="20">
+
+                <!-- Título -->
+                <Label TextColor="DimGrey"
+                       Text="Cadastro"
+                       FontSize="28"
+                       HorizontalOptions="Center" />
+
+                <Label TextColor="DimGrey"
+                       Text="Insira suas informacoes nos campos"
+                       FontSize="14"
+                       HorizontalOptions="Center" />
+
+                <!-- Nome -->
+                <Entry x:Name="txtNome" 
+                       TextColor="Black"
+                       Placeholder="Nome"
+                       HeightRequest="45"/>
+
+
+                <!-- CPF -->
+                <Entry x:Name="txtCPF"
+                       TextColor="Black"
+                       Placeholder="CPF"
+                       HeightRequest="45"/>
+
+
+                <!-- Email -->
+                <Entry x:Name="txtEmail"
+                       TextColor="Black"
+                       Placeholder="Email"
+                       HeightRequest="45"/>
+
+                <!-- Telefone -->
+                <Entry x:Name="txtTelefone"
+                       TextColor="Black"
+                       Placeholder="Telefone"
+                       HeightRequest="45"/>
+
+                <Grid ColumnDefinitions="*,Auto">
+                    <!-- Senha -->
+                    <Entry x:Name="txtSenha"
+                           TextColor="Black"
+                           x:Name="senhaEntry"
+                           Placeholder="Senha"
+                           IsPassword="True"
+                           HeightRequest="45"
+                           Grid.Column="0"/>
+
+                    <!-- Botão de mostrar/ocultar -->
+                    <Button  BackgroundColor="White"
+                             Text="👁"
+                             WidthRequest="50"
+                             Grid.Column="1"
+                             Clicked="Button_Clicked"/>
+
+                </Grid>
+
+                <!-- Botão -->
+                <Button OnCadastrarClicked
+                        BackgroundColor="green"
+                        Text="Cadastre-se"
+                        HeightRequest="45"/>
+
+            </VerticalStackLayout>
+
+        </Frame>
+
+    </Grid>
+
+</ContentPage>

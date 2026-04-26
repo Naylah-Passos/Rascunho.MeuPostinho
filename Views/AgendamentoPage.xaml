@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MeuPostinhoAPI.Views.AgendamentoPage"
+             Title="Agendamento">
+
+    <VerticalStackLayout Padding="20" Spacing="10">
+
+        <DatePicker x:Name="dataConsulta"/>
+
+        <Entry x:Name="txtMedico" Placeholder="Nome do médico"/>
+        <Entry x:Name="txtUBS" Placeholder="Nome da UBS"/>
+
+        <Button Text="Agendar" Clicked="BtnAgendar_Clicked"/>
+
+    </VerticalStackLayout>
+</ContentPage>

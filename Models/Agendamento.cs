@@ -22,12 +22,12 @@ namespace MeuPostinhoAPI.Models
         public string Status { get; set; }
 
         [NotNull]
-        public int IdUsuario { get; set; }
+        public string Usuario { get; set; }
 
         [NotNull]
-        public int IdMedico { get; set; }
+        public string Medico { get; set; }
 
         [NotNull]
-        public int UbsId { get; set; }
+        public string UBS { get; set; }
     }
 }

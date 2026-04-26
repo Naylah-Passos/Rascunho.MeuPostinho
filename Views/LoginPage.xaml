@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MeuPostinhoAPI.Views.LoginPage"
+             Title="LoginPage">
+    
+    <Grid BackgroundColor="#EEEEEE">
+        
+        <!-- Card central -->
+        <Frame BackgroundColor="GhostWhite"
+               WidthRequest="400"
+               Padding="30"
+               CornerRadius="12"
+               HasShadow="True"
+               HorizontalOptions="Center"
+               VerticalOptions="Center">
+            
+            <VerticalStackLayout Spacing="20">
+                
+                <!-- Título -->
+                <Label TextColor="DimGrey"
+                       Text="Sign In"
+                       FontSize="28"
+                       HorizontalOptions="Center" />
+                
+                <Label TextColor="DimGrey"
+                       Text="Insira suas informacoes no campo"
+                       FontSize="14"
+                       HorizontalOptions="Center" />
+                
+                <!-- Email -->
+                <Entry x:Name="txtEmail"
+                       TextColor="Black"
+                       Placeholder="Email"
+                       HeightRequest="45"/>
+                
+                <!-- Senha -->
+                <Entry x:Name="txtSenha"
+                       TextColor="Black"
+                       Placeholder="Password"
+                       IsPassword="True"
+                       HeightRequest="45"/>
+                
+                <!-- Opções -->
+                <Grid ColumnDefinitions="*">
+                    <HorizontalStackLayout>
+                        <CheckBox Color="DarkSeaGreen"/>
+                        <Label TextColor="DimGrey"
+                               Text="Me lembre "
+                               VerticalOptions="Center"/>
+                    </HorizontalStackLayout>
+                    
+                    <Label TextColor="DimGrey"
+                           Text="Esqueceu sua senha?"
+                           HorizontalOptions="End"
+                           VerticalOptions="Center"/>
+                </Grid>
+                
+                <!-- Botão -->
+                <Button x:Name="btnLogin"
+                        BackgroundColor="green"
+                        Text="Entrar"
+                        HeightRequest="45"/>
+                
+                
+                
+                <!-- Rodapé -->
+                <Label HorizontalOptions="Center">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Cadastre-se"
+                                  TextColor="DimGrey"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnCadastrarTapped"/>
+                    </Label.GestureRecognizers>
+
+                </Label>
+            </VerticalStackLayout>
+        </Frame>
+    </Grid>
+    
+</ContentPage>
