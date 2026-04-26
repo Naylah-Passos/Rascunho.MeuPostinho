@@ -4,14 +4,64 @@
              x:Class="MeuPostinhoAPI.Views.MedicamentoPage"
              Title="Medicamentos">
 
-    <CollectionView x:Name="listaMedicamentos">
-        <CollectionView.ItemTemplate>
-            <DataTemplate>
-                <Frame Margin="5">
-                    <Label Text="{Binding Nome}" FontSize="16"/>
-                </Frame>
-            </DataTemplate>
-        </CollectionView.ItemTemplate>
-    </CollectionView>
+    <ScrollView BackgroundColor="#EEEEEE">
+
+        <VerticalStackLayout Padding="20" Spacing="15">
+
+            <!-- Título -->
+            <Label 
+            Text="Medicamentos"
+            FontSize="24"
+            TextColor="Green"
+            HorizontalOptions="Center"/>
+
+            <!-- CARD 1 -->
+            <Frame CornerRadius="12" Padding="15" HasShadow="True">
+                <VerticalStackLayout Spacing="5">
+
+                    <Label Text="Paracetamol" FontSize="18" TextColor="Black"/>
+
+                    <Label Text="Descrição: Analgésico e antitérmico" TextColor="Grey"/>
+                    <Label Text="Quantidade: 120 unidades" TextColor="Grey"/>
+                    <Label Text="UBS: UBS Central" TextColor="Grey"/>
+
+                    <Label Text="Status: Disponível" TextColor="Green"/>
+
+                </VerticalStackLayout>
+            </Frame>
+
+            <!-- CARD 2 -->
+            <Frame CornerRadius="12" Padding="15" HasShadow="True">
+                <VerticalStackLayout Spacing="5">
+
+                    <Label Text="Ibuprofeno" FontSize="18" TextColor="Black"/>
+
+                    <Label Text="Descrição: Anti-inflamatório" TextColor="Grey"/>
+                    <Label Text="Quantidade: 20 unidades" TextColor="Grey"/>
+                    <Label Text="UBS: UBS Norte" TextColor="Grey"/>
+
+                    <Label Text="Status: Baixo estoque" TextColor="Orange"/>
+
+                </VerticalStackLayout>
+            </Frame>
+
+            <!-- CARD 3 -->
+            <Frame CornerRadius="12" Padding="15" HasShadow="True">
+                <VerticalStackLayout Spacing="5">
+
+                    <Label Text="Amoxicilina" FontSize="18" TextColor="Black"/>
+
+                    <Label Text="Descrição: Antibiótico" TextColor="Grey"/>
+                    <Label Text="Quantidade: 0 unidades" TextColor="Grey"/>
+                    <Label Text="UBS: UBS Sul" TextColor="Grey"/>
+
+                    <Label Text="Status: Indisponível" TextColor="Red"/>
+
+                </VerticalStackLayout>
+            </Frame>
+
+        </VerticalStackLayout>
+
+    </ScrollView>
 
 </ContentPage>

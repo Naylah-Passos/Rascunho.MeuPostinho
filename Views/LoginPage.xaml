@@ -60,10 +60,11 @@
                 <Button x:Name="btnLogin"
                         BackgroundColor="green"
                         Text="Entrar"
-                        HeightRequest="45"/>
-                
-                
-                
+                        HeightRequest="45"
+                        Clicked="OnLoginClicked"/>
+
+
+
                 <!-- Rodapé -->
                 <Label HorizontalOptions="Center">
                     <Label.FormattedText>

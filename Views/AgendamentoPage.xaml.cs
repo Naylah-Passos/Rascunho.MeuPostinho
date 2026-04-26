@@ -19,8 +19,6 @@ public partial class AgendamentoPage : ContentPage
             UBS = txtUBS.Text
         };
 
-        await App.DbAgendamento.Insert(a);
-
         await DisplayAlert("Sucesso", "Consulta agendada!", "OK");
     }
 }

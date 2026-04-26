@@ -4,14 +4,113 @@
              x:Class="MeuPostinhoAPI.Views.MinhasConsultasPage"
              Title="Consultas">
 
-    <CollectionView x:Name="listaConsultas">
-        <CollectionView.ItemTemplate>
-            <DataTemplate>
-                <Frame Margin="5">
-                    <Label Text="{Binding DataConsulta}" />
+    <Grid BackgroundColor="#EEEEEE">
+
+        <ScrollView>
+
+            <VerticalStackLayout Padding="20" Spacing="15">
+
+                <!-- Título -->
+                <Label Text="Minhas Consultas"
+                   FontSize="28"
+                   TextColor="#2E7D32"
+                   HorizontalOptions="Center"
+                   FontAttributes="Bold"/>
+
+                <!-- CARD 1 -->
+                <Frame BackgroundColor="White"
+                   Padding="20"
+                   CornerRadius="12"
+                   HasShadow="True">
+
+                    <VerticalStackLayout Spacing="8">
+
+                        <Label Text="Consulta Agendada"
+                           FontSize="18"
+                           TextColor="DimGrey"
+                           FontAttributes="Bold"/>
+
+                        <Label Text="Médico: Dr. João Silva"
+                           TextColor="Black"/>
+
+                        <Label Text="UBS: UBS Central"
+                           TextColor="Gray"/>
+
+                        <Label Text="Data: 25/04/2026"
+                           TextColor="Gray"/>
+
+                        <Label Text="Status: Confirmada"
+                           TextColor="DarkSeaGreen"
+                           FontAttributes="Bold"/>
+
+                    </VerticalStackLayout>
+
                 </Frame>
-            </DataTemplate>
-        </CollectionView.ItemTemplate>
-    </CollectionView>
+
+                <!-- CARD 2 -->
+                <Frame BackgroundColor="White"
+                   Padding="20"
+                   CornerRadius="12"
+                   HasShadow="True">
+
+                    <VerticalStackLayout Spacing="8">
+
+                        <Label Text="Consulta Agendada"
+                           FontSize="18"
+                           TextColor="DimGrey"
+                           FontAttributes="Bold"/>
+
+                        <Label Text="Médico: Dra. Ana Costa"
+                           TextColor="Black"/>
+
+                        <Label Text="UBS: UBS Norte"
+                           TextColor="Gray"/>
+
+                        <Label Text="Data: 28/04/2026"
+                           TextColor="Gray"/>
+
+                        <Label Text="Status: Pendente"
+                           TextColor="Goldenrod"
+                           FontAttributes="Bold"/>
+
+                    </VerticalStackLayout>
+
+                </Frame>
+
+                <!-- CARD 3 -->
+                <Frame BackgroundColor="White"
+                   Padding="20"
+                   CornerRadius="12"
+                   HasShadow="True">
+
+                    <VerticalStackLayout Spacing="8">
+
+                        <Label Text="Consulta Agendada"
+                           FontSize="18"
+                           TextColor="DimGrey"
+                           FontAttributes="Bold"/>
+
+                        <Label Text="Médico: Dr. Carlos Lima"
+                           TextColor="Black"/>
+
+                        <Label Text="UBS: UBS Sul"
+                           TextColor="Gray"/>
+
+                        <Label Text="Data: 30/04/2026"
+                           TextColor="Gray"/>
+
+                        <Label Text="Status: Realizada"
+                           TextColor="Gray"
+                           FontAttributes="Bold"/>
+
+                    </VerticalStackLayout>
+
+                </Frame>
+
+            </VerticalStackLayout>
+
+        </ScrollView>
+
+    </Grid>
 
 </ContentPage>

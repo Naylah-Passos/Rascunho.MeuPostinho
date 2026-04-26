@@ -10,6 +10,5 @@ public partial class MinhasConsultasPage : ContentPage
     protected override async void OnAppearing()
     {
         base.OnAppearing();
-        listaConsultas.ItemsSource = await App.DbAgendamento.GetAll();
     }
 }

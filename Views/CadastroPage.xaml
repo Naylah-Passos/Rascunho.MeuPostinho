@@ -58,7 +58,6 @@
                     <!-- Senha -->
                     <Entry x:Name="txtSenha"
                            TextColor="Black"
-                           x:Name="senhaEntry"
                            Placeholder="Senha"
                            IsPassword="True"
                            HeightRequest="45"
@@ -74,10 +73,10 @@
                 </Grid>
 
                 <!-- Botão -->
-                <Button OnCadastrarClicked
+                <Button Text="Cadastre-se"
                         BackgroundColor="green"
-                        Text="Cadastre-se"
-                        HeightRequest="45"/>
+                        HeightRequest="45"
+                        Clicked="OnCadastrarClicked"/>
 
             </VerticalStackLayout>
 

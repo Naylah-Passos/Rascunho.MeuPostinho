@@ -4,14 +4,31 @@
              x:Class="MeuPostinhoAPI.Views.HomePage"
              Title="Início">
 
-    <VerticalStackLayout Padding="20" Spacing="15">
+    <Grid BackgroundColor="#EEEEEE">
+        <VerticalStackLayout  Padding="30" Spacing="25" VerticalOptions="Center">
 
-        <Label Text="Bem-vindo ao Meu Postinho" FontSize="20"/>
+            <!-- Título -->
+            <Label
+             TextColor="DarkSeaGreen"
+             Text="Bem-vindo ao Meu Postinho"
+             FontSize="22"
+             HorizontalOptions="Center"/>
 
-        <Button Text="Agendar Consulta" Clicked="Agendar_Clicked"/>
-        <Button Text="Ver Medicamentos" Clicked="Medicamentos_Clicked"/>
-        <Button Text="Minhas Consultas" Clicked="Consultas_Clicked"/>
+            <!-- Botões grandes -->
+            <Frame CornerRadius="12" Padding="0" HasShadow="True">
+                <Button  BackgroundColor="DarkSeaGreen" Text="Agendar Consulta" HeightRequest="80"  FontSize="18" Clicked="Agendar_Clicked"/>
+            </Frame>
 
-    </VerticalStackLayout>
-    
+            <Frame CornerRadius="12" Padding="0" HasShadow="True">
+                <Button 
+             BackgroundColor="DarkSeaGreen" Text="Ver Medicamentos" HeightRequest="80" FontSize="18" Clicked="Medicamentos_Clicked"/>
+            </Frame>
+
+
+            <Frame CornerRadius="12" Padding="0" HasShadow="True">
+                <Button  BackgroundColor="DarkSeaGreen" Text="Minhas Consultas" HeightRequest="80" FontSize="18" Clicked="Consultas_Clicked"/>
+            </Frame>
+        </VerticalStackLayout>
+    </Grid>
+
 </ContentPage>

@@ -4,14 +4,56 @@
              x:Class="MeuPostinhoAPI.Views.AgendamentoPage"
              Title="Agendamento">
 
-    <VerticalStackLayout Padding="20" Spacing="10">
 
-        <DatePicker x:Name="dataConsulta"/>
+    <Grid BackgroundColor="#EEEEEE">
 
-        <Entry x:Name="txtMedico" Placeholder="Nome do médico"/>
-        <Entry x:Name="txtUBS" Placeholder="Nome da UBS"/>
+        <Frame WidthRequest="350" Padding="25" CornerRadius="12" HasShadow="True" HorizontalOptions="Center" VerticalOptions="Center">
 
-        <Button Text="Agendar" Clicked="BtnAgendar_Clicked"/>
+            <VerticalStackLayout Spacing="15">
 
-    </VerticalStackLayout>
+                <!-- Título -->
+                <Label TextColor="DimGrey"
+                       Text="Agendamento" FontSize="24"
+                       HorizontalOptions="Center"/>
+
+                <!-- Data -->
+                <VerticalStackLayout Spacing="1">
+                    <Label Text="Data"
+                           TextColor="Grey"/>
+                    <DatePicker x:Name="dataConsulta"
+                                TextColor="Grey"/>
+                </VerticalStackLayout>
+
+                <!-- Hora -->
+                <VerticalStackLayout Spacing="1">
+                    <Label Text="Hora"
+                           TextColor="Grey"/>
+                    <TimePicker x:Name="horaConsulta" 
+                                TextColor="Grey"/>
+                </VerticalStackLayout>
+
+
+                <!-- Médico -->
+                <Entry TextColor="Black"
+                       x:Name="txtMedico"
+                       Placeholder="Nome do médico"/>
+
+                <!-- UBS -->
+                <Entry TextColor="Black"
+                       x:Name="txtUBS"
+                       Placeholder="Nome da UBS"/>
+
+                <!-- Botão -->
+                <Button BackgroundColor="DarkSeaGreen"
+                        Text="Agendar"
+                        HeightRequest="45"
+                        Clicked="BtnAgendar_Clicked"/>
+
+
+            </VerticalStackLayout>
+
+        </Frame>
+
+    </Grid>
+
 </ContentPage>

@@ -7,6 +7,11 @@ public partial class CadastroPage : ContentPage
 		InitializeComponent();
 	}
 
+    private void Button_Clicked(object sender, EventArgs e)
+    {
+        txtSenha.IsPassword = !txtSenha.IsPassword;
+    }
+
     private async void OnCadastrarClicked(object sender, EventArgs e)
     {
         string nome = txtNome.Text;
@@ -16,10 +21,12 @@ public partial class CadastroPage : ContentPage
         string senha = txtSenha.Text;
 
         if (string.IsNullOrWhiteSpace(nome) ||
+            string.IsNullOrWhiteSpace(cpf) ||
             string.IsNullOrWhiteSpace(email) ||
+            string.IsNullOrWhiteSpace(telefone) ||
             string.IsNullOrWhiteSpace(senha))
         {
-            await DisplayAlert("Erro", "Preencha todos os campos obrigatórios!", "OK");
+            await DisplayAlert("Erro", "Preencha todos os campos!", "OK");
             return;
         }
 

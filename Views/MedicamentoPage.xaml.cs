@@ -10,6 +10,5 @@ public partial class MedicamentoPage : ContentPage
     protected override async void OnAppearing()
     {
         base.OnAppearing();
-        listaMedicamentos.ItemsSource = await App.DbMedicamento.GetAll();
     }
 }

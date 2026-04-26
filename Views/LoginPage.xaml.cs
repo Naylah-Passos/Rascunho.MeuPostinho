@@ -22,6 +22,7 @@ public partial class LoginPage : ContentPage
         {
             await DisplayAlert("Sucesso", "Login realizado!", "OK");
 
+            await Navigation.PushAsync(new HomePage());
         }
         else
         {
