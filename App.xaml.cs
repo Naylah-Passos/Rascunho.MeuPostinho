@@ -1,4 +1,5 @@
 ﻿using MeuPostinhoAPI.Helpers;
+using MeuPostinho.Helpers;
 using MeuPostinhoAPI.Views;
 
 namespace MeuPostinhoAPI

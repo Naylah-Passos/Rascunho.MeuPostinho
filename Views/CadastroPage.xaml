@@ -24,7 +24,7 @@
                        HorizontalOptions="Center" />
 
                 <Label TextColor="DimGrey"
-                       Text="Insira suas informacoes nos campos"
+                       Text="Insira suas informações nos campos"
                        FontSize="14"
                        HorizontalOptions="Center" />
 
