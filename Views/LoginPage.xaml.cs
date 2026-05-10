@@ -18,22 +18,29 @@ public partial class LoginPage : ContentPage
             return;
         }
 
+        // Login Administrador
         if (email == "admin@teste.com" && senha == "123")
+        {
+            await DisplayAlert("Sucesso", "Login administrativo realizado!", "OK");
+
+            await Navigation.PushAsync(new AdminHomePage());
+            return;
+        }
+
+        // Login Paciente
+        if (email == "user@teste.com" && senha == "123")
         {
             await DisplayAlert("Sucesso", "Login realizado!", "OK");
 
             await Navigation.PushAsync(new HomePage());
+            return;
         }
-        else
-        {
-            await DisplayAlert("Erro", "Email ou senha inválidos", "OK");
-        }
+
+        await DisplayAlert("Erro", "Email ou senha inválidos", "OK");
     }
 
     private async void OnCadastrarTapped(object sender, TappedEventArgs e)
     {
-        await DisplayAlert("Cadastro", "Abrindo tela de cadastro...", "OK");
-
         await Navigation.PushAsync(new CadastroPage());
     }
 }

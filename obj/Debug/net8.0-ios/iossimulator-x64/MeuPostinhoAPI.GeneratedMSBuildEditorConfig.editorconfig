@@ -48,6 +48,18 @@ build_metadata.AdditionalFiles.ManifestResourceName = MeuPostinhoAPI.Resources.S
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
 
+[C:/PROJETOS VISUAL STUDIO 2022/MeuPostinhoAPI/Views/AdminHomePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MeuPostinhoAPI.Views.AdminHomePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\AdminHomePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\AdminHomePage.xaml
+
+[C:/PROJETOS VISUAL STUDIO 2022/MeuPostinhoAPI/Views/AgendaMedicaPege.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MeuPostinhoAPI.Views.AgendaMedicaPege.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\AgendaMedicaPege.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\AgendaMedicaPege.xaml
+
 [C:/PROJETOS VISUAL STUDIO 2022/MeuPostinhoAPI/Views/AgendamentoPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MeuPostinhoAPI.Views.AgendamentoPage.xaml
@@ -59,6 +71,12 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MeuPostinhoAPI.Views.CadastroPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\CadastroPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\CadastroPage.xaml
+
+[C:/PROJETOS VISUAL STUDIO 2022/MeuPostinhoAPI/Views/GerenciamentoMedicamentosPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MeuPostinhoAPI.Views.GerenciamentoMedicamentosPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\GerenciamentoMedicamentosPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\GerenciamentoMedicamentosPage.xaml
 
 [C:/PROJETOS VISUAL STUDIO 2022/MeuPostinhoAPI/Views/HomePage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
@@ -83,3 +101,9 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MeuPostinhoAPI.Views.MinhasConsultasPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\MinhasConsultasPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\MinhasConsultasPage.xaml
+
+[C:/PROJETOS VISUAL STUDIO 2022/MeuPostinhoAPI/Views/RelatoriosPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MeuPostinhoAPI.Views.RelatoriosPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\RelatoriosPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\RelatoriosPage.xaml

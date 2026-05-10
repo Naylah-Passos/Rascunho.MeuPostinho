@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MeuPostinhoAPI.Views.RelatoriosPage"
+             Title="Relatórios">
+
+    <Grid BackgroundColor="#EEEEEE">
+
+        <ScrollView>
+            <VerticalStackLayout Padding="20" Spacing="15">
+
+                <Label Text="Relatórios"
+                       FontSize="26"
+                       TextColor="DarkSeaGreen"
+                       HorizontalOptions="Center"
+                       FontAttributes="Bold"/>
+
+                <Label Text="Visão geral do sistema"
+                       FontSize="14"
+                       TextColor="DimGrey"
+                       HorizontalOptions="Center"/>
+
+                <Frame CornerRadius="12" Padding="20" HasShadow="True">
+                    <VerticalStackLayout>
+                        <Label Text="Consultas agendadas"
+                               FontSize="16"
+                               TextColor="DimGrey"/>
+                        <Label x:Name="lblConsultasAgendadas"
+                               Text="0"
+                               FontSize="24"
+                               TextColor="Black"
+                               FontAttributes="Bold"/>
+                    </VerticalStackLayout>
+                </Frame>
+
+                <Frame CornerRadius="12" Padding="20" HasShadow="True">
+                    <VerticalStackLayout>
+                        <Label Text="Consultas realizadas"
+                               FontSize="16"
+                               TextColor="DimGrey"/>
+                        <Label x:Name="lblConsultasRealizadas"
+                               Text="0"
+                               FontSize="24"
+                               TextColor="Black"
+                               FontAttributes="Bold"/>
+                    </VerticalStackLayout>
+                </Frame>
+
+                <Frame CornerRadius="12" Padding="20" HasShadow="True">
+                    <VerticalStackLayout>
+                        <Label Text="Medicamentos cadastrados"
+                               FontSize="16"
+                               TextColor="DimGrey"/>
+                        <Label x:Name="lblMedicamentos"
+                               Text="0"
+                               FontSize="24"
+                               TextColor="Black"
+                               FontAttributes="Bold"/>
+                    </VerticalStackLayout>
+                </Frame>
+
+                <Frame CornerRadius="12" Padding="20" HasShadow="True">
+                    <VerticalStackLayout>
+                        <Label Text="Medicamentos em baixa"
+                               FontSize="16"
+                               TextColor="DimGrey"/>
+                        
+                        <Label x:Name="lblBaixoEstoque"
+                               Text="0"
+                               FontSize="24"
+                               TextColor="Black"
+                               FontAttributes="Bold"/>
+                    </VerticalStackLayout>
+                </Frame>
+
+            </VerticalStackLayout>
+        </ScrollView>
+
+    </Grid>
+</ContentPage>

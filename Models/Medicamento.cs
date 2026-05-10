@@ -17,5 +17,8 @@ namespace MeuPostinhoAPI.Models
 
         [NotNull]
         public string Descricao { get; set; }
+
+        [NotNull]
+        public int Quantidade { get; set; }
     }
 }

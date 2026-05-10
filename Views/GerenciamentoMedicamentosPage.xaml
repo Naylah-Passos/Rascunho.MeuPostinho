@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MeuPostinhoAPI.Views.GerenciamentoMedicamentos"
+ Title="Medicamentos">
+
+    <Grid BackgroundColor="#EEEEEE">
+
+        <ScrollView>
+            <VerticalStackLayout Padding="20" Spacing="15">
+
+                <Label Text="Gerenciamento de Medicamentos"
+                       FontSize="24"
+                       TextColor="DarkSeaGreen"
+                       HorizontalOptions="Center"
+                       FontAttributes="Bold"/>
+
+                <Entry x:Name="txtNome"
+                       Placeholder="Nome do medicamento"
+                       TextColor="Black"
+                       BackgroundColor="White"/>
+
+                <Entry x:Name="txtQuantidade"
+                       Placeholder="Quantidade"
+                       Keyboard="Numeric"
+                       TextColor="Black"
+                       BackgroundColor="White"/>
+
+                <Entry x:Name="txtDescricao"
+                       Placeholder="Descrição"
+                       TextColor="Black"
+                       BackgroundColor="White"/>
+
+
+                <HorizontalStackLayout Spacing="10">
+
+                    <Button Text="Adicionar"
+                            BackgroundColor="DarkSeaGreen"
+                            TextColor="White"
+                            Clicked="Adicionar_Clicked"/>
+
+                    <Button Text="Editar"
+                            BackgroundColor="Goldenrod"
+                            TextColor="White"
+                            Clicked="Editar_Clicked"/>
+
+                    <Button Text="Remover"
+                            BackgroundColor="IndianRed"
+                            TextColor="White"
+                            Clicked="Remover_Clicked"/>
+
+                </HorizontalStackLayout>
+
+                <!-- Lista -->
+                <Label Text="Estoque Atual"
+                       FontSize="18"
+                       TextColor="DimGrey"
+                       FontAttributes="Bold"/>
+
+                <CollectionView x:Name="listaMedicamentos"
+                                SelectionMode="Single"
+                                SelectionChanged="listaMedicamentos_SelectionChanged">
+
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Frame CornerRadius="12"
+                                   Padding="15"
+                                   Margin="0,5"
+                                   HasShadow="True"
+                                   BackgroundColor="White">
+
+                                <VerticalStackLayout>
+                                    <Label Text="{Binding Nome}"
+                                           TextColor="Black"
+                                           FontAttributes="Bold"/>
+
+                                    <Label Text="{Binding QuantidadeTexto}"
+                                           TextColor="Gray"/>
+                                </VerticalStackLayout>
+
+                            </Frame>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+
+                </CollectionView>
+
+            </VerticalStackLayout>
+        </ScrollView>
+
+    </Grid>
+
+</ContentPage>
