@@ -30,7 +30,7 @@
     <AppXManifest Include="C:\PROJETOS VISUAL STUDIO 2022\MeuPostinhoAPI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2026-05-10T21:18:19.841</Modified>
+      <Modified>2026-05-10T22:50:35.220</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -44,11 +44,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\PROJETOS VISUAL STUDIO 2022\MeuPostinhoAPI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\MeuPostinhoAPI.dll">
       <PackagePath>MeuPostinhoAPI.dll</PackagePath>
-      <Modified>2026-05-10T21:18:18.965</Modified>
+      <Modified>2026-05-10T22:50:34.297</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\PROJETOS VISUAL STUDIO 2022\MeuPostinhoAPI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>MeuPostinhoAPI.exe</PackagePath>
-      <Modified>2026-05-10T21:18:18.972</Modified>
+      <Modified>2026-05-10T22:50:34.308</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\PROJETOS VISUAL STUDIO 2022\MeuPostinhoAPI\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
