@@ -32,28 +32,36 @@
                 <Entry x:Name="txtEmail"
                        TextColor="Black"
                        Placeholder="Email"
-                       HeightRequest="45"/>
+                       HeightRequest="45"
+                       Completed="OnEmailCompleted"/>
                 
                 <!-- Senha -->
                 <Entry x:Name="txtSenha"
                        TextColor="Black"
                        Placeholder="Password"
                        IsPassword="True"
-                       HeightRequest="45"/>
+                       HeightRequest="45"
+                       Completed="OnSenhaCompleted"/>
                 
                 <!-- Opções -->
-                <Grid ColumnDefinitions="*">
-                    <HorizontalStackLayout>
-                        <CheckBox Color="DarkSeaGreen"/>
+                <Grid ColumnDefinitions="Auto,*,Auto">
+                    <HorizontalStackLayout Grid.Column="0">
+                        <CheckBox x:Name="chkRemember"
+                                  Color="DarkSeaGreen"/>
                         <Label TextColor="DimGrey"
                                Text="Me lembre "
                                VerticalOptions="Center"/>
                     </HorizontalStackLayout>
-                    
-                    <Label TextColor="DimGrey"
+
+                    <Label Grid.Column="2"
+                           TextColor="DimGrey"
                            Text="Esqueceu sua senha?"
                            HorizontalOptions="End"
-                           VerticalOptions="Center"/>
+                           VerticalOptions="Center">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnForgotPasswordTapped"/>
+                        </Label.GestureRecognizers>
+                    </Label>
                 </Grid>
                 
                 <!-- Botão -->

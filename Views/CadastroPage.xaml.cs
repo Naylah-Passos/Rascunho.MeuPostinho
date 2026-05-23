@@ -1,3 +1,5 @@
+using MeuPostinhoAPI.Services;
+
 namespace MeuPostinhoAPI.Views;
 
 public partial class CadastroPage : ContentPage

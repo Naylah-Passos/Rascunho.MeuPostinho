@@ -111,3 +111,9 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MeuPostinhoAPI.Views.RelatoriosPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\RelatoriosPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\RelatoriosPage.xaml
+
+[C:/PROJETOS VISUAL STUDIO 2022/MeuPostinhoAPI/Views/ResetPasswordPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MeuPostinhoAPI.Views.ResetPasswordPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ResetPasswordPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ResetPasswordPage.xaml

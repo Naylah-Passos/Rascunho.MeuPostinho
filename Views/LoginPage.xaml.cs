@@ -1,46 +1,107 @@
+﻿using MeuPostinhoAPI.Services;
+
 namespace MeuPostinhoAPI.Views;
 
 public partial class LoginPage : ContentPage
 {
+    private readonly AuthService _authService;
+
     public LoginPage()
     {
         InitializeComponent();
     }
 
+    protected override void OnAppearing()
+    {
+        base.OnAppearing();
+
+        var savedEmail = Preferences.Get("saved_email", string.Empty);
+
+        if (!string.IsNullOrEmpty(savedEmail))
+        {
+            txtEmail.Text = savedEmail;
+            chkRemember.IsChecked = true;
+        }
+
+        txtEmail.Focus();
+    }
+
     private async void OnLoginClicked(object sender, EventArgs e)
     {
-        string email = txtEmail.Text;
-        string senha = txtSenha.Text;
-
-        if (string.IsNullOrWhiteSpace(email) || string.IsNullOrWhiteSpace(senha))
+        try
         {
-            await DisplayAlert("Erro", "Preencha todos os campos", "OK");
-            return;
-        }
+            string email = txtEmail?.Text?.Trim();
+            string senha = txtSenha?.Text?.Trim();
 
-        // Login Administrador
-        if (email == "admin@teste.com" && senha == "123")
+            if (string.IsNullOrWhiteSpace(email) ||
+                string.IsNullOrWhiteSpace(senha))
+            {
+                await DisplayAlert(
+                    "Campos obrigatórios",
+                    "Preencha email e senha.",
+                    "OK");
+                return;
+            }
+
+            // ADMIN
+            if (email == "admin@teste.com" &&
+                senha == "123")
+            {
+                await DisplayAlert(
+                    "Sucesso",
+                    "Login administrativo realizado!",
+                    "OK");
+
+                await Navigation.PushAsync(new AdminHomePage());
+                return;
+            }
+
+            // USUÁRIO
+            if (email == "user@teste.com" &&
+                senha == "123")
+            {
+                await DisplayAlert(
+                    "Sucesso",
+                    "Login realizado!",
+                    "OK");
+
+                await Navigation.PushAsync(new HomePage());
+                return;
+            }
+
+            await DisplayAlert(
+                "Erro",
+                "Email ou senha inválidos.",
+                "OK");
+        }
+        catch (Exception ex)
         {
-            await DisplayAlert("Sucesso", "Login administrativo realizado!", "OK");
-
-            await Navigation.PushAsync(new AdminHomePage());
-            return;
+            await DisplayAlert(
+                "Erro inesperado",
+                ex.Message,
+                "OK");
         }
+    }
 
-        // Login Paciente
-        if (email == "user@teste.com" && senha == "123")
-        {
-            await DisplayAlert("Sucesso", "Login realizado!", "OK");
+    private void OnEmailCompleted(object sender, EventArgs e)
+    {
+        txtSenha.Focus();
+    }
 
-            await Navigation.PushAsync(new HomePage());
-            return;
-        }
+    private void OnSenhaCompleted(object sender, EventArgs e)
+    {
+        OnLoginClicked(sender, EventArgs.Empty);
+    }
 
-        await DisplayAlert("Erro", "Email ou senha inv�lidos", "OK");
+    private async void OnForgotPasswordTapped(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new ResetPasswordPage());
     }
 
     private async void OnCadastrarTapped(object sender, TappedEventArgs e)
     {
         await Navigation.PushAsync(new CadastroPage());
     }
+
+
 }
