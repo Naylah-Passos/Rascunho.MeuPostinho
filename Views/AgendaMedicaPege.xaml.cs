@@ -3,8 +3,8 @@ using MeuPostinhoAPI.Models;
 
 public partial class AgendaMedica : ContentPage
 {
-	public AgendaMedica()
-	{
+    public AgendaMedica()
+    {
 		InitializeComponent();
 	}
 

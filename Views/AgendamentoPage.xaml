@@ -5,55 +5,120 @@
              Title="Agendamento">
 
 
-    <Grid BackgroundColor="#EEEEEE">
+    <ScrollView>
+        <Grid BackgroundColor="#EEEEEE">
 
-        <Frame WidthRequest="350" Padding="25" CornerRadius="12" HasShadow="True" HorizontalOptions="Center" VerticalOptions="Center">
+            <Frame BackgroundColor="White"
+                   Margin="20"
+                   Padding="25"
+                   CornerRadius="20"
+                   HasShadow="True"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   MaximumWidthRequest="450">
 
-            <VerticalStackLayout Spacing="15">
+                <VerticalStackLayout Spacing="18">
 
-                <!-- Título -->
-                <Label TextColor="DimGrey"
-                       Text="Agendamento" FontSize="24"
-                       HorizontalOptions="Center"/>
+                    <!-- Cabeçalho -->
+                    <VerticalStackLayout Spacing="4">
 
-                <!-- Data -->
-                <VerticalStackLayout Spacing="1">
-                    <Label Text="Data"
-                           TextColor="Grey"/>
-                    <DatePicker x:Name="dataConsulta"
-                                TextColor="Grey"/>
+                        <Label Text="Agendar Consulta"
+                               FontSize="28"
+                               FontAttributes="Bold"
+                               TextColor="DarkSeaGreen"
+                               HorizontalOptions="Center"/>
+
+                        <Label Text="Escolha a unidade, profissional e horário"
+                               FontSize="14"
+                               TextColor="Gray"
+                               HorizontalOptions="Center"/>
+                    </VerticalStackLayout>
+
+                    <!-- USAFA -->
+                    <VerticalStackLayout Spacing="4">
+
+                        <Label Text="USAFA"
+                               TextColor="DimGray"
+                               FontAttributes="Bold"/>
+
+                        <Frame Padding="8"
+                               CornerRadius="12"
+                               BorderColor="#D9D9D9"
+                               BackgroundColor="#F8F8F8">
+
+                            <Picker x:Name="pickerUSAFa"
+                                    Title="Selecione a USAFA"
+                                    TextColor="Black"
+                                    SelectedIndexChanged="PickerUSAFa_SelectedIndexChanged"/>
+                        </Frame>
+                    </VerticalStackLayout>
+
+                    <!-- Médico -->
+                    <VerticalStackLayout Spacing="4">
+
+                        <Label Text="Profissional"
+                               TextColor="DimGray"
+                               FontAttributes="Bold"/>
+
+                        <Frame Padding="8"
+                               CornerRadius="12"
+                               BorderColor="#D9D9D9"
+                               BackgroundColor="#F8F8F8">
+
+                            <Picker x:Name="pickerMedico"
+                                    Title="Selecione o profissional"
+                                    TextColor="Black"/>
+                        </Frame>
+                    </VerticalStackLayout>
+
+                    <!-- Data -->
+                    <VerticalStackLayout Spacing="4">
+
+                        <Label Text="Data da consulta"
+                               TextColor="DimGray"
+                               FontAttributes="Bold"/>
+
+                        <Frame Padding="8"
+                               CornerRadius="12"
+                               BorderColor="#D9D9D9"
+                               BackgroundColor="#F8F8F8">
+
+                            <DatePicker x:Name="dataConsulta"
+                                        TextColor="Black"/>
+                        </Frame>
+                    </VerticalStackLayout>
+
+                    <!-- Horário -->
+                    <VerticalStackLayout Spacing="4">
+
+                        <Label Text="Horário"
+                               TextColor="DimGray"
+                               FontAttributes="Bold"/>
+
+                        <Frame Padding="8"
+                               CornerRadius="12"
+                               BorderColor="#D9D9D9"
+                               BackgroundColor="#F8F8F8">
+
+                            <Picker x:Name="pickerHorario"
+                                    Title="Selecione um horário"
+                                    TextColor="Black"/>
+                        </Frame>
+                    </VerticalStackLayout>
+
+                    <!-- Botão -->
+                    <Button x:Name="btnAgendar"
+                            Text="Confirmar Agendamento"
+                            BackgroundColor="DarkSeaGreen"
+                            TextColor="White"
+                            FontAttributes="Bold"
+                            HeightRequest="55"
+                            CornerRadius="15"
+                            Clicked="BtnAgendar_Clicked"/>
+
                 </VerticalStackLayout>
 
-                <!-- Hora -->
-                <VerticalStackLayout Spacing="1">
-                    <Label Text="Hora"
-                           TextColor="Grey"/>
-                    <TimePicker x:Name="horaConsulta" 
-                                TextColor="Grey"/>
-                </VerticalStackLayout>
-
-
-                <!-- Médico -->
-                <Entry TextColor="Black"
-                       x:Name="txtMedico"
-                       Placeholder="Nome do médico"/>
-
-                <!-- UBS -->
-                <Entry TextColor="Black"
-                       x:Name="txtUBS"
-                       Placeholder="Nome da UBS"/>
-
-                <!-- Botão -->
-                <Button BackgroundColor="DarkSeaGreen"
-                        Text="Agendar"
-                        HeightRequest="45"
-                        Clicked="BtnAgendar_Clicked"/>
-
-
-            </VerticalStackLayout>
-
-        </Frame>
-
-    </Grid>
-
+            </Frame>
+        </Grid>
+    </ScrollView>
 </ContentPage>

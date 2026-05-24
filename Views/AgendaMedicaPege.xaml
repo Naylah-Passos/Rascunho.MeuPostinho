@@ -1,120 +1,120 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MeuPostinhoAPI.Views.AgendaMedica"
              Title="Agenda Medica">
-    <Grid BackgroundColor="#EEEEEE">
+        <Grid BackgroundColor="#EEEEEE">
 
-        <ScrollView>
+            <ScrollView>
 
-            <VerticalStackLayout Padding="20"
+                <VerticalStackLayout Padding="20"
                                  Spacing="20">
 
-                <!-- Título -->
-                <Frame CornerRadius="12"
+                    <!-- Título -->
+                    <Frame CornerRadius="12"
                        Padding="10"
                        HasShadow="True">
 
-                    <Label Text="Agenda Médica"
+                        <Label Text="Agenda Médica"
                            FontSize="24"
                            TextColor="DarkSeaGreen"
                            HorizontalOptions="Center"/>
 
-                </Frame>
+                    </Frame>
 
-                <!-- Lista -->
-                <CollectionView x:Name="cvAgendamentos">
+                    <!-- Lista -->
+                    <CollectionView x:Name="cvAgendamentos">
 
-                    <CollectionView.ItemTemplate>
+                        <CollectionView.ItemTemplate>
 
-                        <DataTemplate>
+                            <DataTemplate>
 
-                            <Frame CornerRadius="12"
+                                <Frame CornerRadius="12"
                                    Padding="15"
                                    Margin="0,0,0,15"
                                    HasShadow="True"
                                    BackgroundColor="White">
 
-                                <VerticalStackLayout Spacing="10">
+                                    <VerticalStackLayout Spacing="10">
 
-                                    <!-- Usuário -->
-                                    <Label Text="{Binding Usuario}"
+                                        <!-- Usuário -->
+                                        <Label Text="{Binding Usuario}"
                                            FontSize="20"
                                            FontAttributes="Bold"
                                            TextColor="Black"/>
 
-                                    <!-- Médico -->
-                                    <Label TextColor="DimGrey"
+                                        <!-- Médico -->
+                                        <Label TextColor="DimGrey"
                                            Text="{Binding Medico,
                                            StringFormat='Médico: {0}'}"/>
 
-                                    <!-- UBS -->
-                                    <Label TextColor="DimGrey"
+                                        <!-- UBS -->
+                                        <Label TextColor="DimGrey"
                                            Text="{Binding UBS,
                                            StringFormat='UBS: {0}'}"/>
 
-                                    <!-- Data -->
-                                    <Label TextColor="DimGrey"
+                                        <!-- Data -->
+                                        <Label TextColor="DimGrey"
                                            Text="{Binding Data,
                                            StringFormat='Data: {0:dd/MM/yyyy}'}"/>
 
-                                    <!-- Hora -->
-                                    <Label TextColor="DimGrey"
+                                        <!-- Hora -->
+                                        <Label TextColor="DimGrey"
                                            Text="{Binding Hora,
                                            StringFormat='Hora: {0}'}"/>
 
-                                    <!-- Status -->
-                                    <Frame BackgroundColor="#FFF4CC"
+                                        <!-- Status -->
+                                        <Frame BackgroundColor="#FFF4CC"
                                            CornerRadius="8"
                                            Padding="6"
                                            HorizontalOptions="Start">
 
-                                        <Label Text="{Binding Status}"
+                                            <Label Text="{Binding Status}"
                                                TextColor="#B8860B"
                                                FontAttributes="Bold"/>
 
-                                    </Frame>
+                                        </Frame>
 
-                                    <!-- Botões -->
-                                    <HorizontalStackLayout Spacing="10">
+                                        <!-- Botões -->
+                                        <HorizontalStackLayout Spacing="10">
 
-                                        <Frame CornerRadius="10"
+                                            <Frame CornerRadius="10"
                                                Padding="0"
                                                HasShadow="True">
 
-                                            <Button Text="Atualizar"
+                                                <Button Text="Atualizar"
                                                     BackgroundColor="DarkSeaGreen"
                                                     TextColor="White"
                                                     HeightRequest="45"/>
 
-                                        </Frame>
+                                            </Frame>
 
-                                        <Frame CornerRadius="10"
+                                            <Frame CornerRadius="10"
                                                Padding="0"
                                                HasShadow="True">
 
-                                            <Button Text="Excluir"
+                                                <Button Text="Excluir"
                                                     BackgroundColor="IndianRed"
                                                     TextColor="White"
                                                     HeightRequest="45"/>
 
-                                        </Frame>
+                                            </Frame>
 
-                                    </HorizontalStackLayout>
+                                        </HorizontalStackLayout>
 
-                                </VerticalStackLayout>
+                                    </VerticalStackLayout>
 
-                            </Frame>
+                                </Frame>
 
-                        </DataTemplate>
+                            </DataTemplate>
 
-                    </CollectionView.ItemTemplate>
+                        </CollectionView.ItemTemplate>
 
-                </CollectionView>
+                    </CollectionView>
 
-            </VerticalStackLayout>
+                </VerticalStackLayout>
 
-        </ScrollView>
+            </ScrollView>
 
-    </Grid>
-</ContentPage>
+        </Grid>
+    </ContentPage>

@@ -1,3 +1,5 @@
+using MeuPostinhoAPI.Data;
+
 namespace MeuPostinhoAPI.Views;
 
 public partial class MinhasConsultasPage : ContentPage
@@ -7,8 +9,14 @@ public partial class MinhasConsultasPage : ContentPage
 		InitializeComponent();
 	}
 
-    protected override async void OnAppearing()
+    protected override void OnAppearing()
     {
         base.OnAppearing();
+
+        consultasCollection.ItemsSource =
+            null;
+
+        consultasCollection.ItemsSource =
+            ConsultaTemp.Consultas;
     }
 }

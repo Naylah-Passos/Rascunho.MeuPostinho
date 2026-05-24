@@ -20,4 +20,18 @@ public partial class HomePage : ContentPage
     {
         await Navigation.PushAsync(new MinhasConsultasPage());
     }
+
+    private async void Logout_Clicked(object sender, EventArgs e)
+    {
+        bool confirmar = await DisplayAlert(
+            "Sair",
+            "Deseja realmente sair da conta?",
+            "Sim",
+            "Cancelar");
+
+        if (confirmar)
+        {
+            await Navigation.PushAsync(new LoginPage());
+        }
+    }
 }

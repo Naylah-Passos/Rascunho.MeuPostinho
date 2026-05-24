@@ -1,1 +1,0 @@
-C:\PROJETOS VISUAL STUDIO 2022\MeuPostinhoAPI\MeuPostinhoAPI.csproj;x64
